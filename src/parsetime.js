@@ -11,7 +11,7 @@ function parseFrenchTime(phrase) {
       return;
     }
 
-    let hour,minute = 0;
+    let hour,minute;
 
     // Handle special cases: "midi" (12:00) and "minuit" (00:00)
     if (match[0] === "midi") {
