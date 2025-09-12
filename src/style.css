@@ -333,3 +333,14 @@ div#center {
     background-color: #000000;
     border-radius: 50%;
 }
+footer {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+footer a {
+    text-decoration: none;
+    line-height: 0;
+}
