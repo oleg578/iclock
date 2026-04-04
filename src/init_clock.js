@@ -12,4 +12,6 @@ const setClock = function (h, m) {
     hourHand.style.setProperty('--rotation', hoursDeg.toString());
     minuteHand.style.setProperty('--rotation', minutesDeg.toString());
 };
-setClock(hours,minutes);
+setClock(hours, minutes);
+
+export { setClock };

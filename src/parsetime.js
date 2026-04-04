@@ -34,3 +34,5 @@ function parseFrenchTime(phrase) {
     resolve({ hour, minute });
   });
 }
+
+export { parseFrenchTime };

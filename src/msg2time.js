@@ -1,3 +1,6 @@
+import { parseFrenchTime } from './parsetime.js';
+import { setClock } from './init_clock.js';
+
 const messageField = document.getElementById('messageField');
 const micButton = document.getElementById('micButton');
 let recognition;
