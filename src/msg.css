@@ -1,5 +1,5 @@
 #messageField {
-    width: 480px;
+    width: min(480px, calc(100vw - 32px));
     padding: 12px;
     margin: 18px;
     overflow-wrap: break-word;
