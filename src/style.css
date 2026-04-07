@@ -20,6 +20,7 @@ body {
     height: var(--clock-size);
     display: grid;
     place-items: center;
+    position: relative;
     background: #ffffff;
     border-radius: 50%;
     box-shadow: 0 0 6px 3px #c6c6c6;
@@ -30,6 +31,9 @@ body {
     height: var(--clock-size);
     box-sizing: border-box;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
 }
 
 .scale-1  { transform: rotate(6deg); }
@@ -77,6 +81,9 @@ body {
     height: calc(var(--clock-size) + 4px);
     box-sizing: border-box;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
     font-size: calc(var(--clock-size) / 10);
     font-weight: 800;
     padding-top: calc(var(--clock-size) / 15);
@@ -112,6 +119,9 @@ body {
 
 .hand {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
     box-sizing: border-box;
     --rotation: 0;
     transition: transform 1s ease-in-out;
@@ -140,6 +150,9 @@ div#minute-hand {
 div#center {
     z-index: 1000;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
     width: calc(var(--clock-size) / 30);
     height: calc(var(--clock-size) / 30);
     background-color: #000000;
