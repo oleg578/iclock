@@ -22,7 +22,6 @@ if ('webkitSpeechRecognition' in window) {
     };
 
     recognition.onresult = (event) => {
-        event.results = undefined;
         const transcript = event.results[0][0].transcript;
         messageField.textContent = transcript;
         parseFrenchTime(transcript).then((t) => {
